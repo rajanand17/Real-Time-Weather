@@ -8,7 +8,7 @@ async function getWeather() {
   try {
     // Replace YOUR_API_KEY with a valid OpenWeatherMap API key
     const apiKey = 'YOUR_API_KEY';
-    const url = `https://api.openweathermap.org/data/2.5/weather?q=${encodeURIComponent(city)}&appid=${apiKey}&units=metric`;
+    const url = `https://api.openweathermap.org/data/2.5/weather?q=${encodeURIComponent(city)}&appid=${41686a70d632a28f536272e092c3a7cc}&units=metric`;
     const response = await fetch(url);
     if (!response.ok) throw new Error('City not found');
     const data = await response.json();
